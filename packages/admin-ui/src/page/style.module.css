@@ -77,6 +77,8 @@ truncates instead of overflowing the page horizontally. */
 .content {
 	flex-grow: 1;
 	overflow: auto;
+	/* Keep absolutely positioned descendants (e.g. visually hidden text) inside the scroll container. */
+	position: relative;
 	display: flex;
 	flex-direction: column;
 
